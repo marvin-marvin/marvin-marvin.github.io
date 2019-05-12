@@ -1,0 +1,5 @@
+AddHandler x-httpd-php70 .php .php3 .php4 .phtml
+AddHandler x-httpd-php70 .php5
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.marvinmarvin.de$
+RewriteRule ^(.*)$ http://www.marvinmarvin.de/$1 [R=302,L]
